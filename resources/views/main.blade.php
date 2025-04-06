@@ -1,4 +1,7 @@
 @extends('layout.app')
+@section('gsap')
+    @extends('layout.section.gsap')
+@endsection
 
 @section('header')
     @include('layout.section.header')
