@@ -1,0 +1,50 @@
+body{
+    background: #000000;
+}
+nav a img{
+    width: 200px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    width: 50%;
+    margin: 8% auto;
+
+}
+.login-person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background: #7B46D8;
+}
+
+.login-person img:first-child{
+    width: 40%;
+}
+.login-person img:last-child{
+    width: 100%;
+}
+.login-form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+.login-form input{
+    margin-left: 10%;
+    background: none;
+    border: none;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+.login-form .name{
+    width: 50%;
+}
+.login-form .data{
+    width: 80%;
+}
+

@@ -1,0 +1,25 @@
+@extends('layout.app')
+
+
+@section('content')
+    <div class="login">
+
+        <div class="login-person">
+            <img src="{{asset('images/logo_lamp.png')}}">
+            <img src="{{asset('images/auth.png')}}">
+        </div>
+
+        <form class="login-form" action="{{route('register')}}" method="post">
+            @csrf
+            <h1>Регистрация</h1>
+            <input class="name" type="text" name="last_name" placeholder="Фамилия">
+            <input class="name" type="text" name="first_name" placeholder="Имя">
+            <input class="name" type="text" name="patronymic" placeholder="Отчество">
+            <input class="data" type="email" name="email" placeholder="Электронная почта">
+            <input class="data" type="text" name="phone" placeholder="Телефон">
+            <button type="submit">Зарегестрироваться</button>
+            <a href="{{route('login.index')}}"></a>
+        </form>
+
+    </div>
+@endsection

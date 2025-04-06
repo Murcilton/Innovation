@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('stages', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('project_id')->constrained('users');
+            $table->foreignId('project_id')->constrained();
             $table->string('title');
             $table->string('description')->nullable();
             $table->integer('number');
-            $table->enum('status', ['planing', 'processed', 'end', 'rejected'])->default('active');
+            $table->enum('status', ['planing', 'processed', 'end', 'rejected'])->default('planing');
             $table->timestamps();
         });
     }
