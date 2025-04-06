@@ -1,9 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: #000000;
     font-family: "Montserrat", sans-serif;
 }
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*====Навбар====*/
 nav a img{
     width: 200px;
+}
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logout img{
+    width: 30px;
 }
 
 /*====Регистрация====*/
@@ -204,4 +242,75 @@ nav a img{
 }
 .profile-form .info3{
     height: 164px;
+}
+
+/*====Главная====*/
+.laptop {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+.card-img{
+    width: 70%;
+}
+.the-laptop {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+}
+.laptop-line {
+    position: absolute;
+    top: 280px;
+    background-color: white;
+    color: black;
+    height: 210px;
+    width: 99vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.text-track {
+    position: absolute;
+    width: 52%;
+    overflow: hidden;
+    color: white;
+}
+.text-track-1 { top: 87px; }
+.text-track-2 { top: 200px; }
+.text-track-3 { bottom: 324px; }
+#animated-text-strip-1,
+#animated-text-strip-2,
+#animated-text-strip-3,
+#animated-text-strip-main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+.marquee {
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+    max-width: none;
+    font-size: 96px;
+    font-weight: 1000;
+    padding-right: 50px;
+}
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+#animated-text-strip-main .marquee {
+    color: black;
+}
+.text-track .marquee {
+    color: white;
 }
