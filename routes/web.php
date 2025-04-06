@@ -31,3 +31,8 @@ Route::get('/login', function () {
     return view('login', compact('title'));
 })-> name('login.index');
 Route::post('/login', [AuthController::class, 'login']) -> name('login');
+
+Route::get('/profile', function () {
+    $title = 'Профиль';
+    return view('profile', compact('title'));
+})-> name('profile');

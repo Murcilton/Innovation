@@ -6,13 +6,14 @@ nav a img{
     width: 200px;
 }
 
-.login{
+/*====Регистрация====*/
+.register{
     display: flex;
     justify-content: center;
     width: 50%;
     margin: 6% auto;
 }
-.login-person{
+.register-person{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,26 +23,86 @@ nav a img{
     border-radius: 35px 0 0 35px;
 }
 
-.login-person img:first-child{
+.register-person img:first-child{
     width: 40%;
 }
-.login-person img:last-child{
+.register-person img:last-child{
     width: 100%;
 }
-.login-form{
+.register-form{
     border-radius: 0 35px 35px 0;
     width: 60%;
     display: flex;
     flex-direction: column;
     background: #ffffff;
 }
-.login-form h1{
+.register-form h1{
     margin-left: 10%;
 }
-.login-form input{
+.register-form input{
     padding-left: 20px;
     margin-bottom: 20px;
     margin-left: 10%;
+    background: none;
+    border: none;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+.register-form button{
+    width: 50%;
+    height: 40px;
+    color: white;
+    background: #7B46D8;
+    border-radius: 15px;
+    border: none;
+    margin-left: 10%;
+}
+.register-form a{
+    margin: 10px 0 20px 10%;
+    color: #7B46D8;
+    text-decoration: none;
+}
+.register-form .name{
+    width: 50%;
+}
+.register-form .data{
+    width: 80%;
+}
+
+/*====Логин====*/
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 6% auto 0 auto;
+}
+.login-person{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    background: #7B46D8;
+    text-align: center;
+}
+.login-form{
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    gap: 20px;
+}
+.login-form a{
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.login-form h1{
+    text-align: center;
+}
+.login-form input {
+    width: 50%;
+    padding-left: 20px;
     background: none;
     border: none;
     height: 50px;
@@ -55,18 +116,92 @@ nav a img{
     background: #7B46D8;
     border-radius: 15px;
     border: none;
+}
+
+/*====Профиль====*/
+
+.profile{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 6% auto;
+}
+.profile-person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40%;
+    background: #7B46D8;
+    border-radius: 35px 0 0 35px;
+}
+
+.profile-person img:first-child{
+    width: 100%;
+}
+
+.profile-person .name{
+    color: white;
+}
+
+.name p:first-child{
+    font-size: 20px;
+    text-align: center;
+}
+
+.name p:nth-child(2){
+    font-size: 10px;
+    text-align: center;
+}
+
+.name p:last-child{
+    font-size: 10px;
+    text-align: center;
+}
+
+.profile-form{
+    border-radius: 0 35px 35px 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+.profile-form h1{
     margin-left: 10%;
 }
-.login-form a{
+.profile-form input{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    background: none;
+    border: none;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+.profile-form button{
+    width: 50%;
+    height: 40px;
+    color: white;
+    background: #7B46D8;
+    border-radius: 15px;
+    border: none;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.profile-form a{
     margin: 10px 0 20px 10%;
-    /*margin-left: 10%;*/
     color: #7B46D8;
     text-decoration: none;
 }
-.login-form .name{
+.profile-form .info1{
     width: 50%;
+    height: 40px;
 }
-.login-form .data{
+.profile-form .info2{
     width: 80%;
+    height: 40px;
 }
-
+.profile-form .info3{
+    height: 164px;
+}
