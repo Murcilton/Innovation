@@ -5,8 +5,8 @@
     <div class="register">
 
         <div class="register-person">
-            <img src="{{asset('images/logo_lamp.png')}}">
-            <img src="{{asset('images/auth.png')}}">
+            <img src="{{asset('images/logo_lamp.png')}}" alt="Логотип">
+            <img src="{{asset('images/auth.png')}}" alt="Авторизация">
         </div>
 
         <form class="register-form" action="{{route('register')}}" method="post">

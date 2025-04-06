@@ -5,7 +5,7 @@
     <div class="login">
 
         <div class="login-person">
-            <img src="{{asset('images/Logo Auth.png')}}">
+            <img src="{{asset('images/Logo Auth.png')}}" alt="Логотип">
         </div>
         <form class="login-form" action="{{route('login')}}" method="post">
             @csrf
