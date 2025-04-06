@@ -17,8 +17,8 @@
             <input class="name" type="text" name="patronymic" placeholder="Отчество">
             <input class="data" type="email" name="email" placeholder="Электронная почта">
             <input class="data" type="text" name="phone" placeholder="Телефон">
-            <button type="submit">Зарегестрироваться</button>
-            <a href="{{route('login.index')}}"></a>
+            <button type="submit">Зарегистрироваться</button>
+            <a href="{{route('login.index')}}">У меня есть аккаунт</a>
         </form>
 
     </div>
