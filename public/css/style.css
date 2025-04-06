@@ -263,7 +263,7 @@ nav ul li a{
 }
 .laptop-line {
     position: absolute;
-    top: 280px;
+    top: 480px;
     background-color: white;
     color: black;
     height: 210px;
@@ -275,13 +275,14 @@ nav ul li a{
 }
 .text-track {
     position: absolute;
+    z-index: 10;
     width: 52%;
     overflow: hidden;
     color: white;
 }
-.text-track-1 { top: 87px; }
-.text-track-2 { top: 200px; }
-.text-track-3 { bottom: 324px; }
+.text-track-1 { top: 167px; }
+.text-track-2 { top: 300px; }
+.text-track-3 { bottom: 425px; }
 #animated-text-strip-1,
 #animated-text-strip-2,
 #animated-text-strip-3,
