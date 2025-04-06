@@ -34,26 +34,16 @@ class NotificationController extends Controller
 
     public function findToken(Request $request)
     {
-        // Проверяем, что токен передан
-        $request->validate([
-                'token' => 'required|string',
-        ]);
-
-        // Проверяем наличие токена в базе данных
-        $user = User::where('token', $request->token)->first();
+        $user = User::where('token', $request->token)->get();
 
         if ($user) {
-            // Если токен найден, возвращаем успех
             return response()->json(['success' => true, 'message' => 'Token is valid'], 200);
         }
-
-        // Если токен не найден, возвращаем ошибку
         return response()->json(['success' => false, 'message' => 'Invalid token'], 404);
     }
 
-    public function updateOnApi(Request $request)
+    public function updateOnApi($token)
     {
-        $token = $request->token;
         $notifications = Notification::whereHas('user', function ($query) use ($token) {
             $query->where('token', $token);
         })->notReaded()->update(['is_read' => 1]);
